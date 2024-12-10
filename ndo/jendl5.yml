@@ -1,0 +1,10 @@
+name: jendl5
+summary: A library based on the JENDL-5.0 evaluations.
+description: |
+  A library based on the JENDL-5.0 evaluations. This is made to mimic the 
+  `python generate_jendl.py -r 5.0` command from the official OpenMC data repo.
+  https://github.com/openmc-dev/data/tree/master.
+  This script does not compute photo cross-sections or TSL data
+neutron:
+  base: jendl5
+  temperatures: 250 294 600 900 1200 2500

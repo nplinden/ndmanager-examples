@@ -1,0 +1,9 @@
+name: cendl31
+summary: A library based on the CENDL-3.1 evaluations.
+description: |
+  A library based on the CENDL-3.1 evaluations. This is made to mimic the 
+  `python generate_cendl.py -r 3.1` command from the official OpenMC data repo.
+  https://github.com/openmc-dev/data/tree/master.
+neutron:
+  base: cendl31
+  temperatures: 250 294 600 900 1200 2500

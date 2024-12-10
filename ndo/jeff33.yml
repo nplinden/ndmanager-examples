@@ -1,0 +1,36 @@
+name: jeff33
+summary: A library based on the JEFF-3.3 evaluations.
+description: |
+  A library based on the JEFF-3.3 evaluations. This is made to mimick the 
+  `python generate_jeff33.py` command from the official OpenMC data repo.
+  https://github.com/openmc-dev/data/tree/master.
+neutron:
+  base: jeff33
+  temperatures: 250 294 600 900 1200 2500
+  add:
+    TENDL-2019: C13 O17
+photon:
+  base: endfb8
+tsl:
+  add:
+    jeff33:
+      'tsl_0008_H(Cah2).endf6': H1
+      'tsl_0037_H(CH2).endf6': H1
+      'tsl_0001_H(H2O).endf6': H1
+      'tsl_0010_H(ICE).endf6': H1
+      'tsl_0038_Mesi-PhII.endf6': H1
+      'tsl_0003_ortho-H.endf6': H1
+      'tsl_0002_para-H.endf6': H1
+      'tsl_0042_Tolue-PhII.endf6': H1
+      'tsl_0007_H(ZrH).endf6': H1
+      'tsl_0011_D(D2O).endf6': H2
+      'tsl_0013_ortho-D.endf6': H2
+      'tsl_0012_para-D.endf6': H2
+      'tsl_0026_4-Be.endf6': Be9
+      'tsl_0031_Graphite.endf6': C0
+      'tsl_0048_O(Al2O3).endf6': O16
+      'tsl_0051_O(D2O).endf6': O16
+      'tsl_0052_24-Mg.endf6': Mg24
+      'tsl_0060_Al(Al2O3).endf6': Al27
+      'tsl_0059_S.endf6': Si28
+      'tsl_0061_Ca(CaH2).endf6': Ca40

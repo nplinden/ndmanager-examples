@@ -1,0 +1,48 @@
+name: endfb8
+summary: A library based on the ENDF-B/VIII.0 evaluations.
+description: |
+  A library based on the ENDF-B/VIII.0 evaluations. This is made to mimic the 
+  `python generate_endf.py -r viii.0` command from the official OpenMC data repo.
+  https://github.com/openmc-dev/data/tree/master.
+neutron:
+  base: endfb8
+  temperatures: 250 294 600 900 1200 2500
+photon:
+  base: endfb8
+tsl:
+  add:
+    endfb8:
+      'tsl_0039_H(Lucite).endf6': H1
+      'tsl_0001_H(H2O).endf6': H1
+      'tsl_0037_H(CH2).endf6': H1
+      'tsl_0007_H(ZrH).endf6': H1
+      'tsl_0010_H(ice-Ih).endf6': H1
+      'tsl_0005_H(YH2).endf6': H1
+      'tsl_0003_ortho-H.endf6': H1
+      'tsl_0002_para-H.endf6': H1
+      'tsl_0040_BENZINE.endf6': H1
+      'tsl_0033_l-ch4.endf6': H1
+      'tsl_0034_s-ch4.endf6': H1
+      'tsl_0011_D(D2O).endf6': H2
+      'tsl_0013_ortho-d.endf6': H2
+      'tsl_0012_para-d.endf6': H2
+      'tsl_0027_Be(BeO).endf6': Be9
+      'tsl_0026_Be-metal.endf6': Be9
+      'tsl_0044_C(3C-SiC).endf6': C12
+      'tsl_0030_Graphite.endf6': C12
+      'tsl_0031_10PGraphit.endf6': C12
+      'tsl_0032_30PGraphit.endf6': C12
+      'tsl_0071_N(UN)L.endf6': N14
+      'tsl_0046_O(BeO).endf6': O16
+      'tsl_0051_O(D2O).endf6': O16
+      'tsl_0050_O(ice-Ih).endf6': O16
+      'tsl_0075_O(UO2).endf6': O16
+      'tsl_0053_13-Al-27.endf6': Al27
+      'tsl_0056_26-Fe-56.endf6': Fe56
+      'tsl_0043_Si(3C-SiC).endf6': Si28
+      'tsl_0047_SiO2alpha.endf6': Si28
+      'tsl_0049_SiO2beta.endf6': Si28
+      'tsl_0055_Y(YH2).endf6': Y89
+      'tsl_0058_Zr(ZrH).endf6': Zr90
+      'tsl_0048_U(UO2).endf6': U238
+      'tsl_0072_U(UN)L.endf6': U238
